@@ -105,12 +105,12 @@
   <div class="collapse navbar-collapse" id="mynavbar">
     <ul class="navbar-nav me-auto">
       <li class="nav-item">
-        <h6><a class="nav-link text-white" href="#">HOME</a>
+        <h6><a class="nav-link text-white" onclick="tab.open('','page','location=0,toolbar=0,...')" href="Zoey Cafe Home Page.html" target="page">HOME</a>
       </li></h6>
         <h6><a class="nav-link text-white" href="#">DINE-IN</a>
       </li></h6>
       <li class="nav-item">
-        <h6><a class="nav-link text-white" href="Zoey Cafe Gallery Page ver3.html">CATERING</a>
+        <h6><a class="nav-link text-white" onclick="tab.open('','page','location=0,toolbar=0,...')" href="Zoey Cafe Gallery Page ver3.html" target="page">CATERING</a>
       </li></h6>
       <li class="nav-item">
         <h6><a class="nav-link text-white" href="#">GALLERY</a>
@@ -132,41 +132,38 @@
     </div>
 </nav><br>
 
-<div class="container-fluid">
-  <div class="row g=0 border" style="height: 250px;">
-    <div class="col-sm-3" id="col-1-breakfast" style="background-image: url('breakfast_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br> 
+<div class="container-fluid" width="100%">
+  <div class="row g=0 border" style="max-width: 100%; height: 250px;">
+    <div class="col" id="col-1-breakfast" style="background-image: url('breakfast_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br> 
       </div>
-    <div class="col-sm-3 bg-dark text-white text-center" id="lunch">
+    <div class="col bg-dark text-white text-center" id="lunch">
       <a href=""><h1 class="display-5 p-5 text-white">LUNCH</h1></a>
     </div>
 
-    <div class="col-sm-3" id="col-3-dinner-img" style="background-image: url('dinner_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
+    <div class="col" id="col-3-dinner-img" style="background-image: url('dinner_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
     </div>
       
-  <div class="col-sm-3 bg-dark text-white text-center" id="dessert">
+  <div class="col bg-dark text-white text-center" id="dessert">
     <a href=""><h1 class="display-5 p-5 text-white">DESSERT</h1></a>
   </div>
     
   </div>
   </div>
   
-  <div class="container-fluid">
-    <div class="row g=0 border" style="height: 250px;">
-      <div class="col-sm-3 bg-dark text-white text-center" id="breakfast">
-        <a href=""><h1 class="display-5 p-5 text-white">BREAKFAST</h1></a>
+  <div class="container-fluid" width="100%">
+    <div class="row g=0 border" style="max-width: 100%; height: 250px;">
+      <div class="col bg-dark text-white text-center" id="breakfast">
+        <a href=""><h1 class="display-5 p-4 text-white">BREAKFAST</h1></a>
         </div>
-    <div class="col-sm-3" id="col-1-breakfast" style="background-image: url('lunch_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
+    <div class="col" id="col-1-breakfast" style="background-image: url('lunch_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
     </div>
       
-    <div class="col-sm-3 bg-dark text-white text-center" id="dinner">
+    <div class="col bg-dark text-white text-center" id="dinner">
       <a href=""><h1 class="display-5 p-5 text-white">DINNER</h1></a>
     </div>
 
-    <div class="col-sm-3" id="col-3-dinner-img" style="background-image: url('dessert_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
+    <div class="col" id="col-3-dinner-img" style="background-image: url('dessert_img.jpg'); background-size: cover;"><br><br><br><br><br><br><br>
     </div>
-      
-      
-    
     </div>
   </div>
     <br><br>
@@ -271,9 +268,9 @@
 
 <br><br><br><br><br><br><br><br>
 
-    <div class="container-fluid" id="container address" style="background-color: rgba(240, 95, 12, 0.918);">
+    <div class="container-fluid" id="container address" width="100%" style="background-color: rgba(240, 95, 12, 0.918);">
       <div class="row p-4" id="row branches map">
-        <div class="col-7" id="col_branches" style="background-image: url('column-1\ address_img.jpg'); background-size: cover; padding: 125px; padding-left: 1px;">
+        <div class="col-7" id="col_branches" style="background-image: url('column-1\ address_img.jpg'); background-size: cover; padding: 70px; padding-left: 1px;">
           <div class="ui">
             <ul class="list">
               <li class="item">
@@ -287,15 +284,13 @@
               </ul>
           </div>
         </div>
-        <div class="col-5 p-4 bg-light" id="col_map">
-          <div class="float-end"><div class="mapouter"><div class="gmap_canvas"><iframe width="528" height="493" id="gmap_canvas" src="https://maps.google.com/maps?q=zoey%20iligan%20city&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:493px;width:528px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:493px;width:528px;}</style></div></div>
+        <div class="col-5 p-2 bg-light" id="col_map">
+          <div class="float-end"><div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=zoey%20iligan%20city&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br>
+            <style>.mapouter{position:relative;text-align:right;height:450px;width:500px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:500px;}</style></div></div>
         </div></div>
       </div>
-
-    </div>
-    <br><br><br>
-
-
+</div>
+    
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
